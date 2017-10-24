@@ -45,3 +45,29 @@ body {
 .room-list td button {
   font-size: 18px;
 }
+
+/* BOOKING MODAL */
+#bookModalBG {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+
+#bookModal {
+  display: flex;
+  padding: 10px;
+  width: 65%;
+  height: 60%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
