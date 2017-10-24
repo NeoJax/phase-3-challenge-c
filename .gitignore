@@ -1,0 +1,5 @@
+node_modules/
+*.log
+.eslintignore
+.eslintrc.js
+.DS_STORE
