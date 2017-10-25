@@ -81,7 +81,7 @@ function listBookings() {
       'left': '|' , 'left-mid': '|' , 'mid': '-' , 'mid-mid': '+',
       'right': '|' , 'right-mid': '|' , 'middle': '│'
     },
-    head: ['Room #', 'Guest Name', 'Check-In', 'Check Out'],
+    head: ['Room #', 'Guest Name', 'Check-In', 'Check-Out'],
     style: {
       head: [],
       border: [],
@@ -104,7 +104,7 @@ function listRoomBookings(roomNum) {
       'left': '|' , 'left-mid': '|' , 'mid': '-' , 'mid-mid': '+',
       'right': '|' , 'right-mid': '|' , 'middle': '│'
     },
-    head: ['Room #', 'Guest Name', 'Check-In', 'Check Out'],
+    head: ['Room #', 'Guest Name', 'Check-In', 'Check-Out'],
     style: {
       head: [],
       border: [],

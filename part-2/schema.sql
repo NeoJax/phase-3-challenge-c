@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS hotel;
-CREATE DATABASE hotel;
+DROP DATABASE IF EXISTS hotel_db;
+CREATE DATABASE hotel_db;
 
-\c hotel;
+\c hotel_db;
 
 CREATE TABLE guests (
 	id SERIAL PRIMARY KEY,

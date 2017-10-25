@@ -1,4 +1,4 @@
-\c hotel
+\c hotel_db
 
 \COPY guests FROM './guests.csv' DELIMITER ',' CSV HEADER;
 
