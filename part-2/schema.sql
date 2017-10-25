@@ -11,7 +11,7 @@ CREATE TABLE guests (
 
 CREATE TABLE rooms (
 	id SERIAL PRIMARY KEY,
-	number VARCHAR(255) NOT NULL,
+	room_num VARCHAR(255) NOT NULL,
 	capacity FLOAT NOT NULL
 );
 
