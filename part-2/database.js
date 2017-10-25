@@ -1,6 +1,6 @@
 const pgp = require('pg-promise')();
 
-const connectionString = process.env.DATABASE_URL || 'postgresql://postgres:postgres@localhost:5432/grocerystore';
+const connectionString = process.env.DATABASE_URL || 'postgresql://postgres:postgres@localhost:5432/hotel';
 const db = pgp(connectionString);
 
 function grabGuests() {
