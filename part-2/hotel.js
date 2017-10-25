@@ -6,6 +6,7 @@ const {
   grabRoomBookings,
 } = require('./database.js');
 const Table = require('cli-table2');
+const pgp = require('pg-promise');
 
 const command = process.argv[2];
 const string = process.argv[3];
