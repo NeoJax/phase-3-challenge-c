@@ -1,78 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Hotel</title>
-    <script src="index.js"></script>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header class="site-header">
-      <h1>Hotel</h1>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <title>Hotel</title>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Hotel</h1>
+  </header>
 
-    <div class="content">
-      <h1>Rooms</h1>
-      <table class="room-list">
-        <thead>
-          <th>Room #</th>
-          <th>Capacity</th>
-          <th>Rate / Night</th>
-          <th></th>
-        </thead>
-        <tbody>
-          <tr id="room2B">
-            <td>2B</td>
-            <td>4</td>
-            <td>$59.99</td>
-            <td><button class="book" onclick="showModal()">Book</button></td>
-          </tr>
-          <tr id="room2A">
-            <td>2A</td>
-            <td>4</td>
-            <td>$59.99</td>
-            <td><button class="bookBtn">Book</button></td>
-          </tr>
-          <tr id="room3A">
-            <td>3A</td>
-            <td>2</td>
-            <td>$45.00</td>
-            <td><button class="bookBtn">Book</button></td>
-          </tr>
-          <tr id="room3B">
-            <td>3B</td>
-            <td>2</td>
-            <td>$45.00</td>
-            <td><button class="bookBtn">Book</button></td>
-          </tr>
-          <tr id="room3C">
-            <td>3C</td>
-            <td>3</td>
-            <td>$52.64</td>
-            <td><button class="bookBtn">Book</button></td>
-          </tr>
-          <tr id="room4A">
-            <td>4A</td>
-            <td>4</td>
-            <td>$59.99</td>
-            <td><button class="bookBtn">Book</button></td>
-          </tr>
-          <tr id="room4B">
-            <td>4B</td>
-            <td>4</td>
-            <td>$59.99</td>
-            <td><button class="bookBtn">Book</button></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </body>
-</html>
-<div id="bookModalBG">
+  <div class="content">
+    <h1>Rooms</h1>
+    <table class="room-list">
+      <thead>
+        <th>Room #</th>
+        <th>Capacity</th>
+        <th>Rate / Night</th>
+        <th></th>
+      </thead>
+      <tbody>
+        <tr id="room2B">
+          <td>2B</td>
+          <td>4</td>
+          <td>$59.99</td>
+          <td><button class="bookBtn">Book</button></td>
+        </tr>
+        <tr id="room2A">
+          <td>2A</td>
+          <td>4</td>
+          <td>$59.99</td>
+          <td><button class="bookBtn">Book</button></td>
+        </tr>
+        <tr id="room3A">
+          <td>3A</td>
+          <td>2</td>
+          <td>$45.00</td>
+          <td><button class="bookBtn">Book</button></td>
+        </tr>
+        <tr id="room3B">
+          <td>3B</td>
+          <td>2</td>
+          <td>$45.00</td>
+          <td><button class="bookBtn">Book</button></td>
+        </tr>
+        <tr id="room3C">
+          <td>3C</td>
+          <td>3</td>
+          <td>$52.64</td>
+          <td><button class="bookBtn">Book</button></td>
+        </tr>
+        <tr id="room4A">
+          <td>4A</td>
+          <td>4</td>
+          <td>$59.99</td>
+          <td><button class="bookBtn">Book</button></td>
+        </tr>
+        <tr id="room4B">
+          <td>4B</td>
+          <td>4</td>
+          <td>$59.99</td>
+          <td><button class="bookBtn">Book</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+<div id="bookModalBG" style="display:none">
   <div id="bookModal">
-    <div id="mdlHeader">
-    </div>
-    <div id="mdlFooter">
-    </div>
+    <form>
+      <div id="mdlHeader">
+        Booking
+        <button id="closeModal" onclick="hideModal()">X</button>
+      </div>
+      <div id="mdlBody">
+        <br>
+        <span id="roomMdl">Room <span id="room"></span></span>
+        <span id="costMdl" class="rightMdl"><span id="cost"></span> / night</span>
+        <br>
+        <br>
+        <br>
+        Check-in <input type="date" class="rightMdl">
+        <br>
+        <br>
+        <br>
+        Nights <input type="number" id="nights" class="rightMdl">
+      </div>
+      <div id="mdlFooter">
+        Total <span id="total"></span> <button id="confirm">Confirm</button>
+      </div>
+    </form>
   </div>
 </div>
+</html>
